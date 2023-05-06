@@ -110,3 +110,26 @@ body {
     background: #273549;
     border-radius: 4.6807px 0px 0px 0px;
 }
+
+#length-text,
+#volume-text,
+#mass-text {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #CCC1FF;
+}
+
+#length-result,
+#volume-result,
+#mass-result {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
