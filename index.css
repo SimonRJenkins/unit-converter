@@ -58,7 +58,8 @@ body {
 }
 
 #input-el:focus {
-    outline: none;
+    outline-color: white;
+    outline-style: solid;
 }
 
 #convert-btn {
