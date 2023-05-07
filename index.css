@@ -45,15 +45,20 @@ body {
 
 }
 
-#number {
-    color: #FFFFFF;
+#input-el {
+    background-color: #6943ff;
+    border: none;
     font-family: 'Inter';
     font-weight: 800;
     font-size: 58px;
     line-height: 24px;
     text-align: center;
+    width: 100px;
+    color: white;
+}
 
-
+#input-el:focus {
+    outline: none;
 }
 
 #convert-btn {

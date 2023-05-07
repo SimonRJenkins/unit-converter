@@ -3,3 +3,5 @@
 1 liter = 0.264 gallon
 1 kilogram = 2.204 pound
 */
+
+const inputEl = document.getElementById("input-el")
