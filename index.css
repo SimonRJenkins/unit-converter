@@ -81,6 +81,10 @@ body {
     color: #3D3D3D;
 }
 
+#convert-btn:active {
+    border: solid 1px;
+}
+
 .results {
     display: flex;
     justify-content: center;
