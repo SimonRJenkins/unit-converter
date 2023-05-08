@@ -25,7 +25,90 @@ let gallonsLiters = document.getElementById("gallons-liters")
 let kilosPounds = document.getElementById("kilos-pounds")
 let poundsKilos = document.getElementById("pounds-kilos")
 
+// add values of inputvalue to round for each conversion e.g :
+// feetValue = inputValue * 3.281;
+// roundedFeetValue = feetValue.toFixed(2) (to 3 decimal places, required by project spec.)
+// metersFeet.textContent += roundedFeetValue + " ";  < in the click event listener
+
+//or instead do
+
+/**
+ * 
+ *   // clear conversion results
+    const conversionResults = [meters, feet, liters, gallons, kilos, pounds, metersFeet, feetMeters, litersGallons, gallonsLiters, kilosPounds, poundsKilos];
+    conversionResults.forEach(result => result.textContent = "");
+
+        // perform conversions
+    const conversionFactors = [1, 3.281, 1, 0.264, 1, 2.204];
+    const metersToFeet = inputEl.value * conversionFactors[1];
+    const feetToMeters = inputEl.value / conversionFactors[1];
+    const litersToGallons = inputEl.value * conversionFactors[3];
+    const gallonsToLiters = inputEl.value / conversionFactors[3];
+    const kilosToPounds = inputEl.value * conversionFactors[5];
+    const poundsToKilos = inputEl.value / conversionFactors[5];
+
+    meters.textContent += inputEl.value + " ";
+    feet.textContent += metersToFeet.toFixed(3) + " ";
+    liters.textContent += inputEl.value + " ";
+    gallons.textContent += litersToGallons.toFixed(3) + " ";
+    kilos.textContent += inputEl.value + " ";
+    pounds.textContent += kilosToPounds.toFixed(3) + " ";
+
+    metersFeet.textContent += metersToFeet.toFixed(3) + " ";
+    feetMeters.textContent += feetToMeters.toFixed(3) + " ";
+
+    litersGallons.textContent += litersToGallons.toFixed(3) + " ";
+    gallonsLiters.textContent += gallonsToLiters.toFixed(3) + " ";
+
+    kilosPounds.textContent += kilosToPounds.toFixed(3) + " ";
+    poundsKilos.textContent += poundsToKilos.toFixed(3) + " ";
+
+ */
 convertBtn.addEventListener("click", function () {
+
+    // clear conversion results
+    const conversionResults = [meters, feet, liters, gallons, kilos, pounds, metersFeet, feetMeters, litersGallons, gallonsLiters, kilosPounds, poundsKilos];
+    conversionResults.forEach(result => result.textContent = "");
+
+    // perform conversions
+    const conversionFactors = [1, 3.281, 1, 0.264, 1, 2.204];
+    const metersToFeet = inputEl.value * conversionFactors[1];
+    const feetToMeters = inputEl.value / conversionFactors[1];
+    const litersToGallons = inputEl.value * conversionFactors[3];
+    const gallonsToLiters = inputEl.value / conversionFactors[3];
+    const kilosToPounds = inputEl.value * conversionFactors[5];
+    const poundsToKilos = inputEl.value / conversionFactors[5];
+
+    meters.textContent += inputEl.value + " ";
+    feet.textContent += metersToFeet.toFixed(3) + " ";
+    liters.textContent += inputEl.value + " ";
+    gallons.textContent += litersToGallons.toFixed(3) + " ";
+    kilos.textContent += inputEl.value + " ";
+    pounds.textContent += kilosToPounds.toFixed(3) + " ";
+
+    metersFeet.textContent += metersToFeet.toFixed(3) + " ";
+    feetMeters.textContent += feetToMeters.toFixed(3) + " ";
+
+    litersGallons.textContent += litersToGallons.toFixed(3) + " ";
+    gallonsLiters.textContent += gallonsToLiters.toFixed(3) + " ";
+
+    kilosPounds.textContent += kilosToPounds.toFixed(3) + " ";
+    poundsKilos.textContent += poundsToKilos.toFixed(3) + " ";
+
+
+    /*meters.textContent = "";
+    feet.textContent = "";
+    liters.textContent = "";
+    gallons.textContent = "";
+    kilos.textContent = "";
+    pounds.textContent = "";
+    metersFeet.textContent = "";
+    feetMeters.textContent = "";
+    litersGallons.textContent = "";
+    gallonsLiters.textContent = "";
+    kilosPounds.textContent = "";
+    poundsKilos.textContent = "";
+
     meters.textContent += inputEl.value + " ";
     feet.textContent += inputEl.value + " ";
     liters.textContent += inputEl.value + " ";
@@ -41,8 +124,7 @@ convertBtn.addEventListener("click", function () {
     gallonsLiters.textContent += inputEl.value / 0.264 + " ";
 
     kilosPounds.textContent += inputEl.value * 2.204 + " ";
-    poundsKilos.textContent += inputEl.value / 2.204 + " ";
-
+    poundsKilos.textContent += inputEl.value / 2.204 + " ";*/
 })
 
 
